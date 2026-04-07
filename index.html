@@ -4,85 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday Elly!</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(to bottom right, #001f2d, #004d5f);
-            color: #ffffff;
-            overflow: hidden;
-            margin: 0;
-            padding: 0;
-        }
-        .glass {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-            padding: 20px;
-            margin: 20px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
-        }
-        h1, h2, h3 {
-            color: #70d6d6;
-        }
-        .loader {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 24px;
-        }
-        .confetti { animation: confetti 10s infinite; }
-        @keyframes confetti {
-            0% { transform: translateY(0); }
-            100% { transform: translateY(-100vh); }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="loader">Loading...</div>
-    <div class="glass">
-        <h1>Happy Birthday Elly!</h1>
-        <h2>Welcome to Your Special Day!</h2>
-        <div class="dashboard">
-            <h3>Your Dashboard</h3>
-            <p>Here you will find all the surprises we have prepared for you!</p>
-        </div>
-        <div class="letter">
-            <h3>A Special Letter</h3>
+    <header>
+        <h1>Welcome to Elly's Birthday Celebration</h1>
+    </header>
+    <main>
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+            <p>Here you can find everything you need to celebrate Elly's special day!</p>
+        </section>
+        <section id="letter">
+            <h2>Letter to Elly</h2>
             <p>Dear Elly,</p>
-            <p>Happy Birthday! We hope this day brings you endless joy and unforgettable memories. You are cherished!</p>
+            <p>On this special day, I want you to know how much you mean to all of us. Your joy and laughter light up our lives!</p>
+            <p>Happy Birthday!</p>
             <p>With love,</p>
-            <p>Your Family</p>
-        </div>
-        <div class="memories">
-            <h3>Memories</h3>
-            <p>A collection of beautiful moments shared together.</p>
-        </div>
-        <div class="video">
-            <h3>A Birthday Video</h3>
-            <p>Video content here...</p>
-        </div>
-        <div class="surprise">
-            <h3>Surprise Section</h3>
-            <p>Get ready for the biggest surprise!</p>
-        </div>
-        <div class="timeline">
-            <h3>Timeline of Joy</h3>
-            <p>Let's look back at some special milestones!</p>
-        </div>
-        <div class="ending">
-            <h3>Final Thoughts</h3>
-            <p>Thank you for being you!</p>
-        </div>
-    </div>
-    <script>
-        // JavaScript for animations and interactivity
-        document.querySelector('.loader').style.display = 'none';
-    </script>
+            <p>Your friends and family</p>
+        </section>
+        <section id="memories">
+            <h2>Memories</h2>
+            <p>Here is a collection of our favorite moments together.</p>
+            <ul>
+                <li>Memory 1: {{ Description of memory 1 }}</li>
+                <li>Memory 2: {{ Description of memory 2 }}</li>
+                <li>Memory 3: {{ Description of memory 3 }}</li>
+            </ul>
+        </section>
+        <section id="timeline">
+            <h2>Timeline</h2>
+            <ol>
+                <li>Event 1: {{ Details }}</li>
+                <li>Event 2: {{ Details }}</li>
+                <li>Event 3: {{ Details }}</li>
+            </ol>
+        </section>
+        <section id="surprise">
+            <h2>Surprise!</h2>
+            <p>Stay tuned for a special surprise just for you!</p>
+        </section>
+        <section id="ending">
+            <h2>Ending</h2>
+            <p>Thank you for being you, Elly! We hope you have an amazing birthday!</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Birthday Wishes for Elly</p>
+    </footer>
 </body>
 </html>
